@@ -14,6 +14,7 @@ console.log(`${fTemp}°F is equals to ${fTempIntoKTemp}°K`);
 // T(°F) = (T(°C) x 1.8) + 32
 let cTemp = 8.34;
 
+
 let cTempIntoFTemp = (cTemp x 1.8) + 32
 console.log(`\n${cTemp}°C is equals to ${cTempIntoFTemp}°F`);
 
