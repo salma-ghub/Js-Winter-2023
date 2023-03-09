@@ -1,6 +1,6 @@
 addGuest(guestName, partySize) {
     if (!this.rIsOpen) {
-      console.log(`Sorry, ${this.rName} is currently closed.`);
+      console.log(`Sorry, ${this.rName} is currently closed. Can't add guests.`);
     } else if (partySize <= 0) {
       console.log('Party size should be greater than 0.');
     } else if (this.rCurrentGuestCount + partySize <= this.rMaxGuestCapacity) {
@@ -21,7 +21,7 @@ removeGuest(guestName, partySize) {
         this.rCurrentGuestCount -= partySize;
         console.log(`Removed ${guestName} and their party of ${partySize} from the restaurant.`);
     } else {
-        console.log(`Cannot remove ${partySize} guests. There are only ${this.rCurrentGuestCount} guests.`);
+        console.log(`Can't remove ${partySize} guests. There are only ${this.rCurrentGuestCount} guests.`);
     }
 }
 
